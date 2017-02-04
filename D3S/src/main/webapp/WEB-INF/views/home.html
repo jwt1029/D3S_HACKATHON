@@ -11,33 +11,35 @@
   <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <!-- 상단 바 -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo">4D</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#login-modal">Sign In</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#login-modal">Sign In</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
+  <!-- 첫번째 컨테이너 -->
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center teal-text text-lighten-2">대략적인 소개</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">대략적인 소개 문구</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">조회</a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">내 학생정보</a>
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="../resources/background1.jpg" alt="Unsplashed background img 1"></div>
@@ -92,18 +94,90 @@
     <div class="parallax"><img src="../resources/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+  <!-- 회원가입 폼 -->
+  <div class="container" id="create-row">
+	<span id="create" class="scrollspy"></span>
+	<div class="spacer"></div>
+	<div class="spacer"></div>
+	<div class="row">
+		<div class="section center">
+	    	<h3 class="thin">Start your <strong class="bold">30 day free</strong> trial now.</h3>
+	        <p class="flow-text">Then from just <span class="materialize-red-text lighten-2">$10 per year</span>.</p>
+	    </div>
+	</div>
+    <div class="row">
+        <div class="col s12">
+            <div class="col s5 center">
+                <div>
+                    <input class="new-list-name-hidden" type="hidden" name="new-list-name">
+                    <div class="center">
+                        <p class="flow-text">Create an account and your new list.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <input id="new-your-name" name="new-your-name" type="text">
+                            <label for="new-your-name">ID</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <input id="new-your-password" name="new-your-password" type="password">
+                            <label for="new-your-password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 input-field">
+                            <input id="new-your-password" name="new-your-password" type="password">
+                            <label for="new-your-password">Password again</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s2">
+            and
+            </div>
+            <div class="col s5 center">
+        		<input class="new-list-name-hidden" type="hidden" name="new-list-name">
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <input id="new-your-name" name="new-your-name" type="text">
+                        <label for="new-your-name">이름</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <input id="new-your-password" name="new-your-password" type="password">
+                        <label for="new-your-password">학교</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <input id="new-your-password" name="new-your-password" type="password">
+                        <label for="new-your-password">학년</label>
+                    </div>	
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <input id="new-your-password" name="new-your-password" type="password">
+                        <label for="new-your-password">반</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        <input id="new-your-password" name="new-your-password" type="password">
+                        <label for="new-your-password">번호</label>
+                    </div>
+                </div>
+        	</div>
         </div>
-      </div>
-
     </div>
+    <div class="row center">
+        <a href="/terms">Terms and conditions</a>
+    </div>
+    <div class="row center">
+	    <button class="btn disabled" id="create-account-and-list">회원가입 버튼</button>
+	    <p id="create-account-and-list-message" class="materialize-red-text lighten-2"></p>
+	</div>
   </div>
 
 
@@ -154,7 +228,34 @@
     </div>
   </footer>
 
-
+  <!-- 로그인 모달 -->
+  <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="row section">
+                <h5>Sign in</h5>
+                <div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="user-email" name="user-email" type="email">
+                            <label for="user-email">ID</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="user-password" name="user-password" type="password">
+                            <label for="user-password">Password</label>
+                        </div>
+                    </div>
+                    <div id="login-button-panel" class="center-align">
+                        <button class="btn" id="login-btn">Login</button>
+                    </div>
+                    <div class="section center">
+                        <a class="modal-trigger" href="#forgot-password-modal">Are you not member?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -162,4 +263,10 @@
   <script src="../resources/js/init.js"></script>
 
   </body>
+
+  <script>
+  	$(document).ready(function() {
+		$('.modal').modal();
+	});
+  </script>
 </html>
