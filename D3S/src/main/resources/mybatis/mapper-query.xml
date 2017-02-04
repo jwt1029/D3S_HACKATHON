@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace= "userMapper" >
+	
+	<!-- Select datas -->
+	<select id="check_login" parameterType="java.util.HashMap" resultType="String">
+		select userkey
+		from userdata
+		where userid = #{userid} and userpw = #{userpw}
+	</select>
+	
+	<select id="getpassword" parameterType="String" resultType="String">
+		select userpw
+		from userdata
+		where userkey = #{userkey}
+	</select>
+	 
+	<select id="getpixeldatas" resultType="java.util.HashMap">
+		select *
+		from pixeldata
+	</select>
+	
+	
+	<!-- Insert datas -->
+	<insert id="register_account" parameterType="java.util.HashMap">
+    	insert into userdata
+    		(userid, userpw, phone_number, email)
+    		values (#{userid}, #{userpw}, #{phone_number}, #{email})
+    </insert>
+	
+	<insert id="write_review" parameterType="java.util.HashMap">
+		insert into review
+			(id, userid, title, content)
+			values (#{id}, #{userid}, #{title}, #{content});
+	</insert>
+	
+	<!-- Update datas -->
+	<update id="update" parameterType="java.util.HashMap">
+		update tina set
+			userid			= #{userid},
+			text			= #{text},
+			cpu				= #{cpu},
+			ram				= #{ram},
+			graphic_card	= #{graphic_card},
+			monitor_size	= #{monitor_size},
+			cost			= #{cost}
+		where id = #{id}
+	</update>
+	
+	<update id="update_review" parameterType="java.util.HashMap">
+		update review set
+			userid = #{userid}, 
+			title = #{title}, 
+			content = #{content}
+		where id = #{id}
+	</update>
+	
+	<update id="like" parameterType="java.util.HashMap">
+		update tina set
+			good = good + #{good},
+			bad = bad + #{bad}
+		where id = #{id}
+	</update>
+</mapper>
