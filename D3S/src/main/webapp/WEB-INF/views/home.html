@@ -6,11 +6,11 @@
 	<title>4D</title>
 
 	<!-- CSS  -->
-	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
- 	<link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->\
-    <link href="<c:url value="/resources/css/materialize.css" />" rel="stylesheet">
-    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+ 	<link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <link href="<c:url value="/resources/css/materialize.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -45,44 +45,40 @@
 				<br><br>
 			</div>
 		</div>
-		<div class="parallax"><img src="./resources/images/background4.jpg" alt="Unsplashed background img 1"></div>
+		<div class="parallax"><img src="../resources/images/background4.jpg" alt="Unsplashed background img 1"></div>
 	</div>
 
 
-  <div class="container">
-    <div class="section">
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+	<div class="container">
+		<div class="section">
+		<!--   Icon Section   -->
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+						<h5 class="center">Speeds up development</h5>
+						<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+						<h5 class="center">User Experience Focused</h5>
+						<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+					</div>
+				</div>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+						<h5 class="center">Easy to work with</h5>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+						<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
   <div class="parallax-container valign-wrapper">
@@ -93,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="./resources/images/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="../resources/images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <!-- 회원가입 폼 -->
@@ -104,7 +100,8 @@
             <div class="row">
                 <div class="section center">
                     <h3 class="thin">Start your <strong class="bold">30 day free</strong> trial now.</h3>
-                    <p class="flow-text">Then from just <span class="materialize-red-text lighten-2">$10 per year</span>.</p>
+                    <p class="flow-text">Create an account and your new list.</p>
+                    <!-- <p class="flow-text">Then from just <span class="materialize-red-text lighten-2">$10 per year</span>.</p> -->
                 </div>
             </div>
             <div id="create-list-login-container" class="row create-list-button disabled">
@@ -113,69 +110,63 @@
                     <div class="create-list-login-panel center">
                         <div>
                             <input class="new-list-name-hidden" type="hidden" name="new-list-name">
-                            <div class="center">
-                                <p class="flow-text">Create an account and your new list.</p>
-                            </div>
                             <div class="row">
 		                        <div class="col s12 input-field">
-		                            <input id="signUpID" name="signUpID" type="text">
-		                            <label for="signUpID">ID</label>
+		                            <input id="user_id_signUp" name="user_id" type="text">
+		                            <label for="user_id_signUp">ID</label>
 		                        </div>
 		                    </div>
 		                    <div class="row">
 		                        <div class="col s12 input-field">
-		                            <input id="signUpPassword" name="signUpPassword" type="password">
-		                            <label for="signUpPassword">Password</label>
+		                            <input id="user_pw_signUp" name="user_pw" type="password">
+		                            <label for="user_pw_signUp">Password</label>
 		                        </div>
 		                    </div>
 		                    <div class="row">
 		                        <div class="col s12 input-field">
-		                            <input id="signUpPasswordAgain" name="signUpPassword" type="password">
-		                            <label for="signUpPassword">Password again</label>
+		                            <input id="user_pw_again" name="user_pw_again" type="password">
+		                            <label for="user_pw_again">Password again</label>
 		                        </div>
 		                    </div>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 hide-on-med-and-up or-divider">
-                    <span>OR</span>
+                    <span>AND</span>
                 </div>
                 <div class="col s12 m6 l6 create-list-login-right">
-                    <div class="hide-on-small-only vertical-or">OR</div>
+                    <div class="hide-on-small-only vertical-or">AND</div>
                     <div class="create-list-login-panel center">
                         <div>
                             <input class="new-list-name-hidden" type="hidden" name="new-list-name">
-                            <div class="center">
-                                <p class="flow-text">Create an account and your new list.</p>
-                            </div>
                             <div class="row">
 			                    <div class="col s12 input-field">
-			                        <input id="signUpName" name="signUpName" type="text">
-			                        <label for="signUpName">이름</label>
+			                        <input id="name" name="name" type="text">
+			                        <label for="name">이름</label>
 			                    </div>
 			                </div>
 			                <div class="row">
 			                    <div class="col s12 input-field">
-			                        <input id="signUpSchool" name="signUpSchool" type="text">
-			                        <label for="signUpSchool">학교</label>
+			                        <input id="school_name" name="school_name" type="text">
+			                        <label for="school_name">학교</label>
 			                    </div>
 			                </div>
 			                <div class="row">
 			                    <div class="col s12 input-field">
-			                        <input id="signUpGrade" name="signUpGrade" type="number">
-			                        <label for="signUpGrade">학년</label>
+			                        <input id="school_grade" name="school_grade" type="number">
+			                        <label for="school_grade">학년</label>
 			                    </div>	
 			                </div>
 			                <div class="row">
 			                    <div class="col s12 input-field">
-			                        <input id="SignUpClass" name="SignUpClass" type="number">
-			                        <label for="SignUpClass">반</label>
+			                        <input id="school_class" name="school_class" type="number">
+			                        <label for="school_class">반</label>
 			                    </div>
 			                </div>
 			                <div class="row">
 			                    <div class="col s12 input-field">
-			                        <input id="SignUpNumber" name="SignUpNumber" type="number">
-			                        <label for="SignUpNumber">번호</label>
+			                        <input id="school_number" name="school_number" type="number">
+			                        <label for="school_number">번호</label>
 			                    </div>
 			                </div>
                         </div>
@@ -185,8 +176,9 @@
 			        <a href="/terms">Terms and conditions</a>
 			    </div>
 			    <div class="row center">
-				    <button class="btn" id="create-account-and-list" type="submit" form="signUpForm">회원가입 버튼</button>
-				    <p id="create-account-and-list-message" class="materialize-red-text lighten-2"></p>
+				    <button class="btn" id="signUpButton" type="button" form="signUpForm"
+                     onclick="passwordCompare();">회원가입 버튼</button>
+				    <p id="signUpButton-message" class="materialize-red-text lighten-2"></p>
 				</div>
 				</form>
             </div>
@@ -265,14 +257,14 @@
                 <div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="signInID" name="signUpID" type="text">
-                            <label for="signInID">ID</label>
+                            <input id="user_id" name="user_id" type="text">
+                            <label for="user_id">ID</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="signInPassword" name="signUpPassword" type="password">
-                            <label for="signInPassword">Password</label>
+                            <input id="user_pw_signIn" name="user_pw" type="password">
+                            <label for="user_pw_signIn">Password</label>
                         </div>
                     </div>
                     <div id="login-button-panel" class="center-align">
@@ -287,19 +279,21 @@
         </div>
     </div>
 
-  <!--  Scripts-->
-  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../resources/js/materialize.js"></script>
-  <script src="../resources/js/init.js"></script> -->
-  <script src="<c:url value="/resources/js/materialize.js" />"></script>
-  <script src="<c:url value="/resources/js/init.js" />"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!--  Scripts-->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../resources/js/materialize.js"></script>
+	<script src="../resources/js/init.js"></script>
+	<script src="../resources/js/methods.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="<c:url value="/resources/js/materialize.js" />"></script>
+	<script src="<c:url value="/resources/js/init.js" />"></script>
+	<script src="<c:url value="/resources/js/methods.js" />"></script> -->
+	</body>
 
-  </body>
-
-  <script>
-  	$(document).ready(function() {
-		$('.modal').modal();
-	});
-  </script>
+	<script>
+		//UI initialize
+		$(document).ready(function() {
+			$('.modal').modal();
+		});
+	</script>
 </html>

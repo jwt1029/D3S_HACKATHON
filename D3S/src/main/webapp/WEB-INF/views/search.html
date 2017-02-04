@@ -14,7 +14,7 @@
   <!-- 상단 바 -->
 	<nav class="white" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">4D</a>
+			<a id="logo-container" href="home.html" class="brand-logo">4D</a>
 			<ul class="right hide-on-med-and-down">
 				<li><a href="">Sign In</a></li>
 			</ul>
@@ -36,7 +36,7 @@
 					<p class="flow-text">','을 사용해 여러 정보를 한번에 조회할 수 있습니다.</p>
 				</div>
 				<div class="input-field col s3">
-					<select>
+					<select id="category">
 						<option value="1">이름</option>
 						<option value="2">학교</option>
 						<option value="3">자격증</option>
@@ -55,11 +55,18 @@
 				</div>
 				<div class="input-field col s9">
 					<i class="material-icons prefix">library_add</i>
-					<input id="InputKeyword" name="InputKeyword" type="text">
-					<label for="InputKeyword">검색어</label>
+					<input id="inputKeyword" name="inputKeyword" type="text" onkeydown="addKeyword(event)" />
+					<label for="inputKeyword">검색어</label>
 				</div>
-				<div class="input-field col s12" id="keywordList">
-					
+				<form id="keywordList">
+					<input id="count" name="count" hidden="hidden" value="0">
+					<div class="input-field col s12" id="keywordList">
+						<!-- 검색 키워드가 들어갈 공간 -->
+
+					</div>
+				</form>
+				<div class="input-field col s12">
+					<button class="btn" id="signUpButton" type="button" form="signUpForm">조회</button>
 				</div>
 			</div>
 		</div>
@@ -117,9 +124,10 @@
 	</footer>
 
 	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="../resources/js/materialize.js"></script>
 	<script src="../resources/js/init.js"></script>
+	<script src="../resources/js/search.js"></script>
 
 </body>
 
