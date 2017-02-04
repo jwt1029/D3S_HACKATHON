@@ -1,49 +1,53 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>4D</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>4D</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- CSS  -->
+	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 	<link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->\
+    <link href="<c:url value="/resources/css/materialize.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+
 </head>
 <body>
-  <!-- 상단 바 -->
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">4D</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#login-modal">Sign In</a></li>
-      </ul>
+	<!-- 상단 바 -->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">4D</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#login-modal">Sign In</a></li>
+			</ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#login-modal">Sign In</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#login-modal">Sign In</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
 
-  <!-- 첫번째 컨테이너 -->
-  <div id="index-banner" class="container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">대략적인 소개</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">대략적인 소개 문구</h5>
-        </div>
-        <div class="row center">
-          <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">조회</a>
-          <a href="" id="download-button" class="btn-large waves-effect waves-light white black-text lighten-1">내 학생정보</a>
-        </div>
-        <br><br>
-      </div>
-    </div>
-    <div class="parallax"><img src="../resources/background4.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+	<!-- 첫번째 컨테이너 -->
+	<div id="index-banner" class="container">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<br><br>
+				<h1 class="header center teal-text text-lighten-2">대략적인 소개</h1>
+				<div class="row center">
+					<h5 class="header col s12 light">대략적인 소개 문구</h5>
+				</div>
+				<div class="row center">
+					<a href="search.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">조회</a>
+					<a href="" id="download-button" class="btn-large waves-effect waves-light white black-text lighten-1">내 학생정보</a>
+				</div>
+				<br><br>
+			</div>
+		</div>
+		<div class="parallax"><img src="./resources/images/background4.jpg" alt="Unsplashed background img 1"></div>
+	</div>
+
 
   <div class="container">
     <div class="section">
@@ -89,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="../resources/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="./resources/images/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <!-- 회원가입 폼 -->
@@ -104,7 +108,7 @@
                 </div>
             </div>
             <div id="create-list-login-container" class="row create-list-button disabled">
-            	<form id="signUpForm" action="">
+            	<form id="signUpForm" action="" method="post">
                 <div class="col s12 m6 l6">
                     <div class="create-list-login-panel center">
                         <div>
@@ -248,14 +252,14 @@
         <div class="container grey-text">
             © 2017 Copyright
             <span class="right">Made with <i class="materialize-red-text text-lighten-3 mdi-action-favorite"></i> in London</span>
-        </div>
+        </div>	
     </div>
 </footer>
 
   <!-- 로그인 모달 -->
   <div id="login-modal" class="modal">
         <div class="modal-content">
-         	<form id="signInForm" action="">
+         	<form id="signInForm" action="" method="post">
             <div class="row section">
                 <h5>Sign in</h5>
                 <div>
@@ -284,9 +288,12 @@
     </div>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../resources/js/materialize.js"></script>
-  <script src="../resources/js/init.js"></script>
+  <script src="../resources/js/init.js"></script> -->
+  <script src="<c:url value="/resources/js/materialize.js" />"></script>
+  <script src="<c:url value="/resources/js/init.js" />"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   </body>
 

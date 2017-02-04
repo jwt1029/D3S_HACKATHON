@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>검색</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../resources/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="../resources/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <!-- 상단 바 -->
+	<nav class="white" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">4D</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="">Sign In</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="">Sign In</a></li>
+			</ul>
+		<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<!-- 검색 개요 -->
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m10">
+				<h3 class="center page-header">Search student information</h3>
+				<div class="section center">
+					<p class="flow-text">조회할 정보를 입력하세요.</p>
+					<p class="flow-text">','을 사용해 여러 정보를 한번에 조회할 수 있습니다.</p>
+				</div>
+				<div class="input-field col s3">
+					<select>
+						<option value="1">이름</option>
+						<option value="2">학교</option>
+						<option value="3">자격증</option>
+						<option value="4">이수과목</option>
+						<option value="5">보유기술</option>
+						<option value="6">관심분야</option>
+						<option value="7">수상경력</option>
+						<option value="8">특허</option>
+						<option value="9">대외활동</option>
+						<option value="10">봉사활동</option>
+						<option value="11">프로젝트</option>
+						<option value="12">관심회사</option>
+						<option value="13">인턴경력</option>
+					</select>
+					<label>검색단위</label>
+				</div>
+				<div class="input-field col s9">
+					<i class="material-icons prefix">library_add</i>
+					<input id="InputKeyword" name="InputKeyword" type="text">
+					<label for="InputKeyword">검색어</label>
+				</div>
+				<div class="input-field col s12" id="keywordList">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 밑 바닥글 -->
+	<footer class="page-footer">
+		<div class="page-footer-icon">
+			<div class="z-depth-1">
+				<!-- <a href="/"><img alt="Gaggle Mail footer logo" src="/static/images/logo_circle48x48@2x.png"></a> -->
+			</div>
+		</div>
+		<div class="container row">
+			<div class="col s12 m6">
+				<div>
+					<a href="">About</a>
+				</div>
+				<div>
+					<a href="">Terms and conditions</a>
+				</div>
+				<div>
+					<a href="mailto:help@gaggle.email">Contact</a>
+				</div>
+				<div>
+					<a href="">Press resources</a>
+				</div>
+				<div>
+					<a href="">Blog</a>
+				</div>
+			</div>
+			<div class="col s12 m6">
+				<div>
+					<a href="">FAQ</a>
+				</div>
+				<div>
+					<a href="">What is group email?</a>
+				</div>
+				<div>
+					<a href="">Why use group email?</a>
+				</div>
+				<div>
+					<a href="">Getting started with group email</a>
+				</div>
+				<div>
+					<a href="">Listserv</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container grey-text">
+				© 2017 Copyright
+				<span class="right">Made with <i class="materialize-red-text text-lighten-3 mdi-action-favorite"></i> in London</span>
+			</div>
+		</div>
+	</footer>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../resources/js/materialize.js"></script>
+	<script src="../resources/js/init.js"></script>
+
+</body>
+
+<script>
+	$(document).ready(function() {
+		$('select').material_select();
+	});
+</script>
+</html>
