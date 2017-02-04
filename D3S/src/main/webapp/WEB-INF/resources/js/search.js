@@ -7,6 +7,12 @@ function addKeyword(event) {
 	var count = document.getElementById('count');
 
 	if (event.keyCode === 13) { //enter가 입력되면
+
+		if (inputKeyword.value == "") {
+			Materialize.toast('Please insert keyword!', 4000);
+			return false;
+		}
+
 		console.log(inputKeyword.value);
 		console.log(category.options[category.selectedIndex].text);
 		console.log(keywordList);
@@ -17,7 +23,7 @@ function addKeyword(event) {
 		keywordList.innerHTML +=
 		'<input name="data' + cnt + //데이터
 		'"' + 'hidden="hidden"' +
-		'value="' + category.options[category.selectedIndex].text +
+		'value="' + category.options[category.selectedIndex].id +
 		":" + inputKeyword.value + '">' +
 
 		'<div class="chip">' + //뷰
