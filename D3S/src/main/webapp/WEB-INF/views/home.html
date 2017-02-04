@@ -27,7 +27,7 @@
   </nav>
 
   <!-- 첫번째 컨테이너 -->
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -37,18 +37,16 @@
         </div>
         <div class="row center">
           <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">조회</a>
-          <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">내 학생정보</a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-light white black-text lighten-1">내 학생정보</a>
         </div>
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="../resources/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="../resources/background4.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
 
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
@@ -95,93 +93,104 @@
   </div>
 
   <!-- 회원가입 폼 -->
-  <div class="container" id="create-row">
-	<span id="create" class="scrollspy"></span>
-	<div class="spacer"></div>
-	<div class="spacer"></div>
-	<div class="row">
-		<div class="section center">
-	    	<h3 class="thin">Start your <strong class="bold">30 day free</strong> trial now.</h3>
-	        <p class="flow-text">Then from just <span class="materialize-red-text lighten-2">$10 per year</span>.</p>
-	    </div>
-	</div>
-    <div class="row">
-        <div class="col s12">
-            <div class="col s5 center">
-                <div>
-                    <input class="new-list-name-hidden" type="hidden" name="new-list-name">
-                    <div class="center">
-                        <p class="flow-text">Create an account and your new list.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 input-field">
-                            <input id="new-your-name" name="new-your-name" type="text">
-                            <label for="new-your-name">ID</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 input-field">
-                            <input id="new-your-password" name="new-your-password" type="password">
-                            <label for="new-your-password">Password</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 input-field">
-                            <input id="new-your-password" name="new-your-password" type="password">
-                            <label for="new-your-password">Password again</label>
-                        </div>
-                    </div>
+  <div class="row" id="create-row">
+            <span id="create" class="scrollspy"></span>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="row">
+                <div class="section center">
+                    <h3 class="thin">Start your <strong class="bold">30 day free</strong> trial now.</h3>
+                    <p class="flow-text">Then from just <span class="materialize-red-text lighten-2">$10 per year</span>.</p>
                 </div>
             </div>
-            <div class="col s2">
-            and
+            <div id="create-list-login-container" class="row create-list-button disabled">
+            	<form id="signUpForm" action="">
+                <div class="col s12 m6 l6">
+                    <div class="create-list-login-panel center">
+                        <div>
+                            <input class="new-list-name-hidden" type="hidden" name="new-list-name">
+                            <div class="center">
+                                <p class="flow-text">Create an account and your new list.</p>
+                            </div>
+                            <div class="row">
+		                        <div class="col s12 input-field">
+		                            <input id="signUpID" name="signUpID" type="text">
+		                            <label for="signUpID">ID</label>
+		                        </div>
+		                    </div>
+		                    <div class="row">
+		                        <div class="col s12 input-field">
+		                            <input id="signUpPassword" name="signUpPassword" type="password">
+		                            <label for="signUpPassword">Password</label>
+		                        </div>
+		                    </div>
+		                    <div class="row">
+		                        <div class="col s12 input-field">
+		                            <input id="signUpPasswordAgain" name="signUpPassword" type="password">
+		                            <label for="signUpPassword">Password again</label>
+		                        </div>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 hide-on-med-and-up or-divider">
+                    <span>OR</span>
+                </div>
+                <div class="col s12 m6 l6 create-list-login-right">
+                    <div class="hide-on-small-only vertical-or">OR</div>
+                    <div class="create-list-login-panel center">
+                        <div>
+                            <input class="new-list-name-hidden" type="hidden" name="new-list-name">
+                            <div class="center">
+                                <p class="flow-text">Create an account and your new list.</p>
+                            </div>
+                            <div class="row">
+			                    <div class="col s12 input-field">
+			                        <input id="signUpName" name="signUpName" type="text">
+			                        <label for="signUpName">이름</label>
+			                    </div>
+			                </div>
+			                <div class="row">
+			                    <div class="col s12 input-field">
+			                        <input id="signUpSchool" name="signUpSchool" type="text">
+			                        <label for="signUpSchool">학교</label>
+			                    </div>
+			                </div>
+			                <div class="row">
+			                    <div class="col s12 input-field">
+			                        <input id="signUpGrade" name="signUpGrade" type="number">
+			                        <label for="signUpGrade">학년</label>
+			                    </div>	
+			                </div>
+			                <div class="row">
+			                    <div class="col s12 input-field">
+			                        <input id="SignUpClass" name="SignUpClass" type="number">
+			                        <label for="SignUpClass">반</label>
+			                    </div>
+			                </div>
+			                <div class="row">
+			                    <div class="col s12 input-field">
+			                        <input id="SignUpNumber" name="SignUpNumber" type="number">
+			                        <label for="SignUpNumber">번호</label>
+			                    </div>
+			                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row center">
+			        <a href="/terms">Terms and conditions</a>
+			    </div>
+			    <div class="row center">
+				    <button class="btn" id="create-account-and-list" type="submit" form="signUpForm">회원가입 버튼</button>
+				    <p id="create-account-and-list-message" class="materialize-red-text lighten-2"></p>
+				</div>
+				</form>
             </div>
-            <div class="col s5 center">
-        		<input class="new-list-name-hidden" type="hidden" name="new-list-name">
-                <div class="row">
-                    <div class="col s12 input-field">
-                        <input id="new-your-name" name="new-your-name" type="text">
-                        <label for="new-your-name">이름</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 input-field">
-                        <input id="new-your-password" name="new-your-password" type="password">
-                        <label for="new-your-password">학교</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 input-field">
-                        <input id="new-your-password" name="new-your-password" type="password">
-                        <label for="new-your-password">학년</label>
-                    </div>	
-                </div>
-                <div class="row">
-                    <div class="col s12 input-field">
-                        <input id="new-your-password" name="new-your-password" type="password">
-                        <label for="new-your-password">반</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 input-field">
-                        <input id="new-your-password" name="new-your-password" type="password">
-                        <label for="new-your-password">번호</label>
-                    </div>
-                </div>
-        	</div>
         </div>
-    </div>
-    <div class="row center">
-        <a href="/terms">Terms and conditions</a>
-    </div>
-    <div class="row center">
-	    <button class="btn disabled" id="create-account-and-list">회원가입 버튼</button>
-	    <p id="create-account-and-list-message" class="materialize-red-text lighten-2"></p>
-	</div>
-  </div>
 
 
-  <div class="parallax-container valign-wrapper">
+
+  <!-- <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -190,70 +199,87 @@
       </div>
     </div>
     <div class="parallax"><img src="../resources/background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
+  </div> -->
 
-  <footer class="page-footer teal">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+  <!-- 밑 바닥글 -->
+  <footer class="page-footer">
+    <div class="page-footer-icon">
+        <div class="z-depth-1">
+            <!-- <a href="/"><img alt="Gaggle Mail footer logo" src="/static/images/logo_circle48x48@2x.png"></a> -->
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+    </div>
+    <div class="container row">
+        <div class="col s12 m6">
+            <div>
+                <a href="">About</a>
+            </div>
+            <div>
+                <a href="">Terms and conditions</a>
+            </div>
+            <div>
+                <a href="mailto:help@gaggle.email">Contact</a>
+            </div>
+            <div>
+                <a href="">Press resources</a>
+            </div>
+            <div>
+                <a href="">Blog</a>
+            </div>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col s12 m6">
+            <div>
+                <a href="">FAQ</a>
+            </div>
+            <div>
+                <a href="">What is group email?</a>
+            </div>
+            <div>
+                <a href="">Why use group email?</a>
+            </div>
+            <div>
+                <a href="">Getting started with group email</a>
+            </div>
+            <div>
+                <a href="">Listserv</a>
+            </div>
         </div>
-      </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Team 4D</a>
-      </div>
+        <div class="container grey-text">
+            © 2017 Copyright
+            <span class="right">Made with <i class="materialize-red-text text-lighten-3 mdi-action-favorite"></i> in London</span>
+        </div>
     </div>
-  </footer>
+</footer>
 
   <!-- 로그인 모달 -->
   <div id="login-modal" class="modal">
         <div class="modal-content">
+         	<form id="signInForm" action="">
             <div class="row section">
                 <h5>Sign in</h5>
                 <div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="user-email" name="user-email" type="email">
-                            <label for="user-email">ID</label>
+                            <input id="signInID" name="signUpID" type="text">
+                            <label for="signInID">ID</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="user-password" name="user-password" type="password">
-                            <label for="user-password">Password</label>
+                            <input id="signInPassword" name="signUpPassword" type="password">
+                            <label for="signInPassword">Password</label>
                         </div>
                     </div>
                     <div id="login-button-panel" class="center-align">
-                        <button class="btn" id="login-btn">Login</button>
+                        <button class="btn" id="create-account-and-list" type="submit" form="signInForm">Login</button>
                     </div>
                     <div class="section center">
                         <a class="modal-trigger" href="#forgot-password-modal">Are you not member?</a>
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 
